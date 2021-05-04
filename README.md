@@ -75,15 +75,25 @@ A reminder app where you can log your plants and be reminded of when they need t
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-| Property | Type | Description |
-| --- | --- | --- |
-| --- | --- | --- |
-| --- | --- | --- |
 
 
 ### Models
-[Add table of models]
+| Property | Type | Description |
+| userName | String | user's profile name |
+| userPicture | File | user's profile picture |
+| plantName | String | each plant in the user's gallery name |
+| comments | String | comments on the forum |
+| wateringPeriod | Number | how long until next watering is needed per plant|
+| plantImage | File | image of the plant |
+| likeCount | Number | number of likes on a post|
+
 ### Networking
 - [Add list of network requests by screen ]
+- First Screen
+- Create Post Screen
+  - (Create/POST) Create a new post object
+- Profile Screen
+  - (Read/GET) Query logged in user object
+  - (Update/PUT) Update user profile image
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]

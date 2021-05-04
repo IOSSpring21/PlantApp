@@ -79,6 +79,7 @@ A reminder app where you can log your plants and be reminded of when they need t
 
 ### Models
 | Property | Type | Description |
+| --- | --- | --- |
 | userName | String | user's profile name |
 | userPicture | File | user's profile picture |
 | plantName | String | each plant in the user's gallery name |

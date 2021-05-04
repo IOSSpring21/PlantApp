@@ -67,6 +67,7 @@ A reminder app where you can log your plants and be reminded of when they need t
 * Profile (plant gallery?) --> Plant explore page
 
 ## Wireframes
+[Add picture of your hand sketched wireframes in this section]
 ![](https://i.imgur.com/FqWgrYT.png)
 
 ### [BONUS] Digital Wireframes & Mockups
@@ -74,6 +75,7 @@ A reminder app where you can log your plants and be reminded of when they need t
 ### [BONUS] Interactive Prototype
 
 ## Schema 
+
 
 ### Models
 | Property | Type | Description |
@@ -86,12 +88,21 @@ A reminder app where you can log your plants and be reminded of when they need t
 | likeCount | Number | number of likes on a post|
 
 ### Networking
-- [Add list of network requests by screen ]
-- First Screen
+- Forum Screen
+  - (Create/POST) Create a new like on a post
+  - (Delete) Delete existing like
+  - (Create/POST) Create a new comment on a post
+  - (Delete) Delete existing comment
 - Create Post Screen
   - (Create/POST) Create a new post object
 - Profile Screen
   - (Read/GET) Query logged in user object
+  - (Update/PUT) Update user name
   - (Update/PUT) Update user profile image
-- [Create basic snippets for each Parse network request]
+  - (Create/POST) Add a plant image/info
+- Gallery Sreen
+  - (Read/GET) Images from Plant API for browsing
+- Notifications
+  - (Create/POST) Notification creation 
+  - (Delete) Delete notification
 - [OPTIONAL: List endpoints if using existing API such as Yelp]

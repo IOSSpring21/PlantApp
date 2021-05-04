@@ -67,7 +67,6 @@ A reminder app where you can log your plants and be reminded of when they need t
 * Profile (plant gallery?) --> Plant explore page
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 ![](https://i.imgur.com/FqWgrYT.png)
 
 ### [BONUS] Digital Wireframes & Mockups
@@ -75,7 +74,6 @@ A reminder app where you can log your plants and be reminded of when they need t
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-
 
 ### Models
 | Property | Type | Description |

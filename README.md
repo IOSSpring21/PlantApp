@@ -68,7 +68,7 @@ A reminder app where you can log your plants and be reminded of when they need t
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+![](https://i.imgur.com/FqWgrYT.png)
 
 ### [BONUS] Digital Wireframes & Mockups
 

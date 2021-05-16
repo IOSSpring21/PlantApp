@@ -6,9 +6,34 @@
 //
 
 import UIKit
+import Parse
 
 class PostViewController: UIViewController {
 
+
+    
+    @IBOutlet weak var postField: UITextView!
+        
+    @IBAction func onSubmit(_ sender: Any) {
+        let post = PFObject(className: "Posts")
+        post["textPost"] = postField.text!
+        post["author"] = PFUser.current()!
+        
+        post.saveInBackground { (success, error) in if success {
+            self.dismiss(animated: true, completion: nil)
+            print("saved!")
+        } else {
+            print("error!")
+        }
+            
+        }
+        
+        
+        
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -107,3 +107,6 @@ A reminder app where you can log your plants and be reminded of when they need t
   - (Create/POST) Notification creation 
   - (Delete) Delete notification
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+
+Image attribution: Darius Dan, flaticon (https://www.flaticon.com/packs/plants-28)

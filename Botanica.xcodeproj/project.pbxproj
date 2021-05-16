@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62BCF24863375A59C90223D4 /* Pods_Botanica_BotanicaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6A648AD7DFF419792EC1E0 /* Pods_Botanica_BotanicaUITests.framework */; };
+		719973E003D02C3168BAE60C /* Pods_Botanica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AED0BA28EE9A2AE0928DD82 /* Pods_Botanica.framework */; };
+		B168A7DA2650E5080042FF5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168A7D92650E5080042FF5D /* AppDelegate.swift */; };
+		B168A7DC2650E5080042FF5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168A7DB2650E5080042FF5D /* SceneDelegate.swift */; };
+		B168A7E12650E5080042FF5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B168A7DF2650E5080042FF5D /* Main.storyboard */; };
+		B168A7E32650E5090042FF5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B168A7E22650E5090042FF5D /* Assets.xcassets */; };
+		B168A7E62650E5090042FF5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B168A7E42650E5090042FF5D /* LaunchScreen.storyboard */; };
+		B168A7F12650E5090042FF5D /* BotanicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168A7F02650E5090042FF5D /* BotanicaTests.swift */; };
+		B168A7FC2650E50A0042FF5D /* BotanicaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168A7FB2650E50A0042FF5D /* BotanicaUITests.swift */; };
+		B1F2571C2650ED040059CAF6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F2571B2650ED040059CAF6 /* LoginViewController.swift */; };
+		CF49392F884BB1DB03C66763 /* Pods_BotanicaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A667FC12384E4984497D38 /* Pods_BotanicaTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B168A7ED2650E5090042FF5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B168A7CE2650E5080042FF5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B168A7D52650E5080042FF5D;
+			remoteInfo = Botanica;
+		};
+		B168A7F82650E5090042FF5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B168A7CE2650E5080042FF5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B168A7D52650E5080042FF5D;
+			remoteInfo = Botanica;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2AED0BA28EE9A2AE0928DD82 /* Pods_Botanica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Botanica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35A667FC12384E4984497D38 /* Pods_BotanicaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BotanicaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D6A648AD7DFF419792EC1E0 /* Pods_Botanica_BotanicaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Botanica_BotanicaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		876CB5C504E8E5599E471377 /* Pods-Botanica-BotanicaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Botanica-BotanicaUITests.release.xcconfig"; path = "Target Support Files/Pods-Botanica-BotanicaUITests/Pods-Botanica-BotanicaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8A26653B0951AEEDE4F410B3 /* Pods-BotanicaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BotanicaTests.debug.xcconfig"; path = "Target Support Files/Pods-BotanicaTests/Pods-BotanicaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		97135A81F9711E5F0F71EB17 /* Pods-Botanica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Botanica.release.xcconfig"; path = "Target Support Files/Pods-Botanica/Pods-Botanica.release.xcconfig"; sourceTree = "<group>"; };
+		A6C6061EC70FE4825627CF2C /* Pods-Botanica-BotanicaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Botanica-BotanicaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Botanica-BotanicaUITests/Pods-Botanica-BotanicaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B168A7D62650E5080042FF5D /* Botanica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Botanica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B168A7D92650E5080042FF5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B168A7DB2650E5080042FF5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B168A7E02650E5080042FF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B168A7E22650E5090042FF5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B168A7E52650E5090042FF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B168A7E72650E5090042FF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B168A7EC2650E5090042FF5D /* BotanicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotanicaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B168A7F02650E5090042FF5D /* BotanicaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotanicaTests.swift; sourceTree = "<group>"; };
+		B168A7F22650E5090042FF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B168A7F72650E5090042FF5D /* BotanicaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotanicaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B168A7FB2650E50A0042FF5D /* BotanicaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotanicaUITests.swift; sourceTree = "<group>"; };
+		B168A7FD2650E50A0042FF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F2571B2650ED040059CAF6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C7E2B577EEBD7C47F77DC63B /* Pods-Botanica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Botanica.debug.xcconfig"; path = "Target Support Files/Pods-Botanica/Pods-Botanica.debug.xcconfig"; sourceTree = "<group>"; };
+		C850C34E81F189E784F67BF6 /* Pods-BotanicaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BotanicaTests.release.xcconfig"; path = "Target Support Files/Pods-BotanicaTests/Pods-BotanicaTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B168A7D32650E5080042FF5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719973E003D02C3168BAE60C /* Pods_Botanica.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B168A7E92650E5090042FF5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF49392F884BB1DB03C66763 /* Pods_BotanicaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B168A7F42650E5090042FF5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62BCF24863375A59C90223D4 /* Pods_Botanica_BotanicaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		136D2AEA8CBD95AAE2249941 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AED0BA28EE9A2AE0928DD82 /* Pods_Botanica.framework */,
+				5D6A648AD7DFF419792EC1E0 /* Pods_Botanica_BotanicaUITests.framework */,
+				35A667FC12384E4984497D38 /* Pods_BotanicaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		492AC10022175211437FE0CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7E2B577EEBD7C47F77DC63B /* Pods-Botanica.debug.xcconfig */,
+				97135A81F9711E5F0F71EB17 /* Pods-Botanica.release.xcconfig */,
+				A6C6061EC70FE4825627CF2C /* Pods-Botanica-BotanicaUITests.debug.xcconfig */,
+				876CB5C504E8E5599E471377 /* Pods-Botanica-BotanicaUITests.release.xcconfig */,
+				8A26653B0951AEEDE4F410B3 /* Pods-BotanicaTests.debug.xcconfig */,
+				C850C34E81F189E784F67BF6 /* Pods-BotanicaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B168A7CD2650E5080042FF5D = {
+			isa = PBXGroup;
+			children = (
+				B168A7D82650E5080042FF5D /* Botanica */,
+				B168A7EF2650E5090042FF5D /* BotanicaTests */,
+				B168A7FA2650E50A0042FF5D /* BotanicaUITests */,
+				B168A7D72650E5080042FF5D /* Products */,
+				492AC10022175211437FE0CD /* Pods */,
+				136D2AEA8CBD95AAE2249941 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B168A7D72650E5080042FF5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B168A7D62650E5080042FF5D /* Botanica.app */,
+				B168A7EC2650E5090042FF5D /* BotanicaTests.xctest */,
+				B168A7F72650E5090042FF5D /* BotanicaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B168A7D82650E5080042FF5D /* Botanica */ = {
+			isa = PBXGroup;
+			children = (
+				B168A7D92650E5080042FF5D /* AppDelegate.swift */,
+				B168A7DB2650E5080042FF5D /* SceneDelegate.swift */,
+				B168A7DF2650E5080042FF5D /* Main.storyboard */,
+				B168A7E22650E5090042FF5D /* Assets.xcassets */,
+				B168A7E42650E5090042FF5D /* LaunchScreen.storyboard */,
+				B168A7E72650E5090042FF5D /* Info.plist */,
+				B1F2571B2650ED040059CAF6 /* LoginViewController.swift */,
+			);
+			path = Botanica;
+			sourceTree = "<group>";
+		};
+		B168A7EF2650E5090042FF5D /* BotanicaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B168A7F02650E5090042FF5D /* BotanicaTests.swift */,
+				B168A7F22650E5090042FF5D /* Info.plist */,
+			);
+			path = BotanicaTests;
+			sourceTree = "<group>";
+		};
+		B168A7FA2650E50A0042FF5D /* BotanicaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B168A7FB2650E50A0042FF5D /* BotanicaUITests.swift */,
+				B168A7FD2650E50A0042FF5D /* Info.plist */,
+			);
+			path = BotanicaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B168A7D52650E5080042FF5D /* Botanica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B168A8002650E50A0042FF5D /* Build configuration list for PBXNativeTarget "Botanica" */;
+			buildPhases = (
+				BBE7B1A64EF03898287BC963 /* [CP] Check Pods Manifest.lock */,
+				B168A7D22650E5080042FF5D /* Sources */,
+				B168A7D32650E5080042FF5D /* Frameworks */,
+				B168A7D42650E5080042FF5D /* Resources */,
+				72081BC97EC69B726595DA2A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Botanica;
+			productName = Botanica;
+			productReference = B168A7D62650E5080042FF5D /* Botanica.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B168A7EB2650E5090042FF5D /* BotanicaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B168A8032650E50A0042FF5D /* Build configuration list for PBXNativeTarget "BotanicaTests" */;
+			buildPhases = (
+				8A13E9576945C01F1C5AEC17 /* [CP] Check Pods Manifest.lock */,
+				B168A7E82650E5090042FF5D /* Sources */,
+				B168A7E92650E5090042FF5D /* Frameworks */,
+				B168A7EA2650E5090042FF5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B168A7EE2650E5090042FF5D /* PBXTargetDependency */,
+			);
+			name = BotanicaTests;
+			productName = BotanicaTests;
+			productReference = B168A7EC2650E5090042FF5D /* BotanicaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B168A7F62650E5090042FF5D /* BotanicaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B168A8062650E50A0042FF5D /* Build configuration list for PBXNativeTarget "BotanicaUITests" */;
+			buildPhases = (
+				34A2DD18D051B7658569ECAD /* [CP] Check Pods Manifest.lock */,
+				B168A7F32650E5090042FF5D /* Sources */,
+				B168A7F42650E5090042FF5D /* Frameworks */,
+				B168A7F52650E5090042FF5D /* Resources */,
+				C05BF75289EA14ABCB0CC3EF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B168A7F92650E5090042FF5D /* PBXTargetDependency */,
+			);
+			name = BotanicaUITests;
+			productName = BotanicaUITests;
+			productReference = B168A7F72650E5090042FF5D /* BotanicaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B168A7CE2650E5080042FF5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B168A7D52650E5080042FF5D = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					B168A7EB2650E5090042FF5D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B168A7D52650E5080042FF5D;
+					};
+					B168A7F62650E5090042FF5D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B168A7D52650E5080042FF5D;
+					};
+				};
+			};
+			buildConfigurationList = B168A7D12650E5080042FF5D /* Build configuration list for PBXProject "Botanica" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B168A7CD2650E5080042FF5D;
+			productRefGroup = B168A7D72650E5080042FF5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B168A7D52650E5080042FF5D /* Botanica */,
+				B168A7EB2650E5090042FF5D /* BotanicaTests */,
+				B168A7F62650E5090042FF5D /* BotanicaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B168A7D42650E5080042FF5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B168A7E62650E5090042FF5D /* LaunchScreen.storyboard in Resources */,
+				B168A7E32650E5090042FF5D /* Assets.xcassets in Resources */,
+				B168A7E12650E5080042FF5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B168A7EA2650E5090042FF5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B168A7F52650E5090042FF5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34A2DD18D051B7658569ECAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Botanica-BotanicaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72081BC97EC69B726595DA2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Botanica/Pods-Botanica-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Botanica/Pods-Botanica-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Botanica/Pods-Botanica-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A13E9576945C01F1C5AEC17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BotanicaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBE7B1A64EF03898287BC963 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Botanica-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C05BF75289EA14ABCB0CC3EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Botanica-BotanicaUITests/Pods-Botanica-BotanicaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Botanica-BotanicaUITests/Pods-Botanica-BotanicaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Botanica-BotanicaUITests/Pods-Botanica-BotanicaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B168A7D22650E5080042FF5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1F2571C2650ED040059CAF6 /* LoginViewController.swift in Sources */,
+				B168A7DA2650E5080042FF5D /* AppDelegate.swift in Sources */,
+				B168A7DC2650E5080042FF5D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B168A7E82650E5090042FF5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B168A7F12650E5090042FF5D /* BotanicaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B168A7F32650E5090042FF5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B168A7FC2650E50A0042FF5D /* BotanicaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B168A7EE2650E5090042FF5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B168A7D52650E5080042FF5D /* Botanica */;
+			targetProxy = B168A7ED2650E5090042FF5D /* PBXContainerItemProxy */;
+		};
+		B168A7F92650E5090042FF5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B168A7D52650E5080042FF5D /* Botanica */;
+			targetProxy = B168A7F82650E5090042FF5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B168A7DF2650E5080042FF5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B168A7E02650E5080042FF5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B168A7E42650E5090042FF5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B168A7E52650E5090042FF5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B168A7FE2650E50A0042FF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B168A7FF2650E50A0042FF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B168A8012650E50A0042FF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E2B577EEBD7C47F77DC63B /* Pods-Botanica.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Botanica/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simranapples.Botanica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B168A8022650E50A0042FF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97135A81F9711E5F0F71EB17 /* Pods-Botanica.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Botanica/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simranapples.Botanica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B168A8042650E50A0042FF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A26653B0951AEEDE4F410B3 /* Pods-BotanicaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BotanicaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simranapples.BotanicaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Botanica.app/Botanica";
+			};
+			name = Debug;
+		};
+		B168A8052650E50A0042FF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C850C34E81F189E784F67BF6 /* Pods-BotanicaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BotanicaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simranapples.BotanicaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Botanica.app/Botanica";
+			};
+			name = Release;
+		};
+		B168A8072650E50A0042FF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C6061EC70FE4825627CF2C /* Pods-Botanica-BotanicaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BotanicaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simranapples.BotanicaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Botanica;
+			};
+			name = Debug;
+		};
+		B168A8082650E50A0042FF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876CB5C504E8E5599E471377 /* Pods-Botanica-BotanicaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BotanicaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = simranapples.BotanicaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Botanica;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B168A7D12650E5080042FF5D /* Build configuration list for PBXProject "Botanica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B168A7FE2650E50A0042FF5D /* Debug */,
+				B168A7FF2650E50A0042FF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B168A8002650E50A0042FF5D /* Build configuration list for PBXNativeTarget "Botanica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B168A8012650E50A0042FF5D /* Debug */,
+				B168A8022650E50A0042FF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B168A8032650E50A0042FF5D /* Build configuration list for PBXNativeTarget "BotanicaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B168A8042650E50A0042FF5D /* Debug */,
+				B168A8052650E50A0042FF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B168A8062650E50A0042FF5D /* Build configuration list for PBXNativeTarget "BotanicaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B168A8072650E50A0042FF5D /* Debug */,
+				B168A8082650E50A0042FF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B168A7CE2650E5080042FF5D /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_Botanica {
+  umbrella header "Pods-Botanica-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_Botanica_BotanicaUITests {
+  umbrella header "Pods-Botanica-BotanicaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -86,6 +86,12 @@
                     <view key="view" contentMode="scaleToFill" id="7No-P3-VnW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="botanic" translatesAutoresizingMaskIntoConstraints="NO" id="9u6-TZ-eOy">
+                                <rect key="frame" x="100" y="101" width="214" height="268"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hGZ-v7-0f1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -99,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zS-oU-ZyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586" y="60"/>
+            <point key="canvasLocation" x="1585.5072463768117" y="59.598214285714285"/>
         </scene>
         <!--Post View Controller-->
         <scene sceneID="Pyi-sy-xAn">
@@ -131,6 +137,26 @@
                                     <action selector="onSubmit:" destination="YeJ-S3-87y" eventType="touchUpInside" id="BvD-G9-aZT"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="botanic (1)" translatesAutoresizingMaskIntoConstraints="NO" id="bZC-ce-CXq">
+                                <rect key="frame" x="22" y="383" width="83" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="botanic (2)" translatesAutoresizingMaskIntoConstraints="NO" id="kx4-0S-O1O">
+                                <rect key="frame" x="22" y="378" width="218" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="botanic (3)" translatesAutoresizingMaskIntoConstraints="NO" id="0bT-Hg-T3E">
+                                <rect key="frame" x="164" y="372" width="76" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="botanic (4)" translatesAutoresizingMaskIntoConstraints="NO" id="VXa-hB-WFT">
+                                <rect key="frame" x="190" y="379" width="192" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="botanic" translatesAutoresizingMaskIntoConstraints="NO" id="zoD-cE-uga">
+                                <rect key="frame" x="294" y="379" width="122" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mka-ZH-6WZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -169,6 +195,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="botanic" width="512" height="512"/>
+        <image name="botanic (1)" width="512" height="512"/>
+        <image name="botanic (2)" width="512" height="512"/>
+        <image name="botanic (3)" width="512" height="512"/>
+        <image name="botanic (4)" width="512" height="512"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

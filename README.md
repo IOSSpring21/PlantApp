@@ -111,9 +111,11 @@ A reminder app where you can log your plants and be reminded of when they need t
 ### Sprint1 
 
 Gif of Login/Written Post Page
+
 <img src=Sprint1Gif1.gif width=250><br>
 
 Gif of Login/Image Post Page
+
 <img src=Sprint1Gif2.gif width=250><br>
 
 

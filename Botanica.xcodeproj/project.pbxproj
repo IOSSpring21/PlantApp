@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		035EC98B26519AC500E462CD /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035EC98A26519AC500E462CD /* PostViewController.swift */; };
+		3BC949662651E2DA000AAE6D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC949652651E2DA000AAE6D /* CameraViewController.swift */; };
 		62BCF24863375A59C90223D4 /* Pods_Botanica_BotanicaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6A648AD7DFF419792EC1E0 /* Pods_Botanica_BotanicaUITests.framework */; };
 		719973E003D02C3168BAE60C /* Pods_Botanica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AED0BA28EE9A2AE0928DD82 /* Pods_Botanica.framework */; };
 		B168A7DA2650E5080042FF5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168A7D92650E5080042FF5D /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 		035EC98A26519AC500E462CD /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		2AED0BA28EE9A2AE0928DD82 /* Pods_Botanica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Botanica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A667FC12384E4984497D38 /* Pods_BotanicaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BotanicaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC949652651E2DA000AAE6D /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		5D6A648AD7DFF419792EC1E0 /* Pods_Botanica_BotanicaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Botanica_BotanicaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		876CB5C504E8E5599E471377 /* Pods-Botanica-BotanicaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Botanica-BotanicaUITests.release.xcconfig"; path = "Target Support Files/Pods-Botanica-BotanicaUITests/Pods-Botanica-BotanicaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8A26653B0951AEEDE4F410B3 /* Pods-BotanicaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BotanicaTests.debug.xcconfig"; path = "Target Support Files/Pods-BotanicaTests/Pods-BotanicaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				B168A7E72650E5090042FF5D /* Info.plist */,
 				B1F2571B2650ED040059CAF6 /* LoginViewController.swift */,
 				035EC98A26519AC500E462CD /* PostViewController.swift */,
+				3BC949652651E2DA000AAE6D /* CameraViewController.swift */,
 			);
 			path = Botanica;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				035EC98B26519AC500E462CD /* PostViewController.swift in Sources */,
+				3BC949662651E2DA000AAE6D /* CameraViewController.swift in Sources */,
 				B1F2571C2650ED040059CAF6 /* LoginViewController.swift in Sources */,
 				B168A7DA2650E5080042FF5D /* AppDelegate.swift in Sources */,
 				B168A7DC2650E5080042FF5D /* SceneDelegate.swift in Sources */,

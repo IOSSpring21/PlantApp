@@ -96,6 +96,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="V6n-si-tQZ">
+                        <barButtonItem key="leftBarButtonItem" title="Photo" image="camera.fill" catalog="system" id="uPa-kN-FWE">
+                            <connections>
+                                <segue destination="45d-AW-kcx" kind="presentation" id="Fxj-hG-Q2w"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="te5-lB-aqY">
                             <connections>
                                 <segue destination="YeJ-S3-87y" kind="presentation" id="tuy-AD-PPi"/>
@@ -173,7 +178,63 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z5R-Lb-ghS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2444.9275362318845" y="59.598214285714285"/>
+            <point key="canvasLocation" x="2487" y="403"/>
+        </scene>
+        <!--CameraViewController-->
+        <scene sceneID="h3K-tG-Q2W">
+            <objects>
+                <viewController title="CameraViewController" id="45d-AW-kcx" customClass="CameraViewController" customModule="Botanica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jJn-a0-tmk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="botanic (11)" translatesAutoresizingMaskIntoConstraints="NO" id="Civ-mN-KG0">
+                                <rect key="frame" x="20" y="137" width="374" height="359"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="kBM-Vn-6uP" appends="YES" id="kdL-s6-c9r"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add a caption" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gCj-aJ-7No">
+                                <rect key="frame" x="20" y="530" width="350" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" systemColor="placeholderTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2d-d9-aPo">
+                                <rect key="frame" x="19" y="586" width="351" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmitButton:" destination="45d-AW-kcx" eventType="touchUpInside" id="2nj-f4-3TY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Post a picture by clicking the plant below!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfn-vr-zlR">
+                                <rect key="frame" x="39" y="51" width="331" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="17"/>
+                                <color key="textColor" red="0.15125883902608969" green="0.52598769430051817" blue="0.17085095303376219" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DuR-GM-Pqs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImageView" destination="Civ-mN-KG0" id="u1O-PG-rbz"/>
+                        <outlet property="commentField" destination="jJn-a0-tmk" id="zfJ-Cl-982"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="doJ-NC-9sJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="kBM-Vn-6uP">
+                    <connections>
+                        <action selector="onCameraButton:" destination="45d-AW-kcx" id="CM9-90-9f5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2486.9565217391305" y="-259.15178571428572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UXi-rA-OSo">
@@ -197,12 +258,17 @@
     <resources>
         <image name="botanic" width="512" height="512"/>
         <image name="botanic (1)" width="512" height="512"/>
+        <image name="botanic (11)" width="512" height="512"/>
         <image name="botanic (2)" width="512" height="512"/>
         <image name="botanic (3)" width="512" height="512"/>
         <image name="botanic (4)" width="512" height="512"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

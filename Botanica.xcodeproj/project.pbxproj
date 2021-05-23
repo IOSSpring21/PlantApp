@@ -18,6 +18,8 @@
 		B168A7E62650E5090042FF5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B168A7E42650E5090042FF5D /* LaunchScreen.storyboard */; };
 		B168A7F12650E5090042FF5D /* BotanicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168A7F02650E5090042FF5D /* BotanicaTests.swift */; };
 		B168A7FC2650E50A0042FF5D /* BotanicaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168A7FB2650E50A0042FF5D /* BotanicaUITests.swift */; };
+		B1B58FCE265AD7CC00BDCDAA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B58FCD265AD7CC00BDCDAA /* FeedViewController.swift */; };
+		B1B58FD0265ADB8700BDCDAA /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B58FCF265ADB8700BDCDAA /* PostCell.swift */; };
 		B1F2571C2650ED040059CAF6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F2571B2650ED040059CAF6 /* LoginViewController.swift */; };
 		CF49392F884BB1DB03C66763 /* Pods_BotanicaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A667FC12384E4984497D38 /* Pods_BotanicaTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,8 @@
 		B168A7F72650E5090042FF5D /* BotanicaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotanicaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B168A7FB2650E50A0042FF5D /* BotanicaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotanicaUITests.swift; sourceTree = "<group>"; };
 		B168A7FD2650E50A0042FF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1B58FCD265AD7CC00BDCDAA /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		B1B58FCF265ADB8700BDCDAA /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		B1F2571B2650ED040059CAF6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C7E2B577EEBD7C47F77DC63B /* Pods-Botanica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Botanica.debug.xcconfig"; path = "Target Support Files/Pods-Botanica/Pods-Botanica.debug.xcconfig"; sourceTree = "<group>"; };
 		C850C34E81F189E784F67BF6 /* Pods-BotanicaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BotanicaTests.release.xcconfig"; path = "Target Support Files/Pods-BotanicaTests/Pods-BotanicaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 				B1F2571B2650ED040059CAF6 /* LoginViewController.swift */,
 				035EC98A26519AC500E462CD /* PostViewController.swift */,
 				3BC949652651E2DA000AAE6D /* CameraViewController.swift */,
+				B1B58FCD265AD7CC00BDCDAA /* FeedViewController.swift */,
+				B1B58FCF265ADB8700BDCDAA /* PostCell.swift */,
 			);
 			path = Botanica;
 			sourceTree = "<group>";
@@ -412,10 +418,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1B58FD0265ADB8700BDCDAA /* PostCell.swift in Sources */,
 				035EC98B26519AC500E462CD /* PostViewController.swift in Sources */,
 				3BC949662651E2DA000AAE6D /* CameraViewController.swift in Sources */,
 				B1F2571C2650ED040059CAF6 /* LoginViewController.swift in Sources */,
 				B168A7DA2650E5080042FF5D /* AppDelegate.swift in Sources */,
+				B1B58FCE265AD7CC00BDCDAA /* FeedViewController.swift in Sources */,
 				B168A7DC2650E5080042FF5D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

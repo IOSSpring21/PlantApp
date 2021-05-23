@@ -12,7 +12,7 @@ import Parse
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-    //test2 comment
+    //test-main comment
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

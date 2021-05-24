@@ -127,4 +127,4 @@ Image attribution: Darius Dan, flaticon (https://www.flaticon.com/packs/plants-2
 
 Gif of Profile/Settings
 
-<img src=GifSprint2.gif width=250><br>
+<img src=Gif1Sprint2.gif width=250><br>

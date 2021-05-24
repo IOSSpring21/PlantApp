@@ -122,3 +122,9 @@ Gif of Login/Image Post Page
 
 
 Image attribution: Darius Dan, flaticon (https://www.flaticon.com/packs/plants-28)
+
+### Sprint2
+
+Gif of Profile/Settings
+
+<img src=GifSprint2.gif width=250><br>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03241575265B2DD2000F37A3 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03241574265B2DD2000F37A3 /* GridViewController.swift */; };
+		0324157A265B31CE000F37A3 /* PlantGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03241579265B31CE000F37A3 /* PlantGridCell.swift */; };
 		035EC98B26519AC500E462CD /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035EC98A26519AC500E462CD /* PostViewController.swift */; };
 		3BC949662651E2DA000AAE6D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC949652651E2DA000AAE6D /* CameraViewController.swift */; };
 		62BCF24863375A59C90223D4 /* Pods_Botanica_BotanicaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6A648AD7DFF419792EC1E0 /* Pods_Botanica_BotanicaUITests.framework */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03241574265B2DD2000F37A3 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		03241579265B31CE000F37A3 /* PlantGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantGridCell.swift; sourceTree = "<group>"; };
 		035EC98A26519AC500E462CD /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		2AED0BA28EE9A2AE0928DD82 /* Pods_Botanica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Botanica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A667FC12384E4984497D38 /* Pods_BotanicaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BotanicaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +162,8 @@
 				3BC949652651E2DA000AAE6D /* CameraViewController.swift */,
 				B1B58FCD265AD7CC00BDCDAA /* FeedViewController.swift */,
 				B1B58FCF265ADB8700BDCDAA /* PostCell.swift */,
+				03241574265B2DD2000F37A3 /* GridViewController.swift */,
+				03241579265B31CE000F37A3 /* PlantGridCell.swift */,
 			);
 			path = Botanica;
 			sourceTree = "<group>";
@@ -418,6 +424,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03241575265B2DD2000F37A3 /* GridViewController.swift in Sources */,
+				0324157A265B31CE000F37A3 /* PlantGridCell.swift in Sources */,
 				B1B58FD0265ADB8700BDCDAA /* PostCell.swift in Sources */,
 				035EC98B26519AC500E462CD /* PostViewController.swift in Sources */,
 				3BC949662651E2DA000AAE6D /* CameraViewController.swift in Sources */,
@@ -603,6 +611,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Botanica/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -622,6 +631,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Botanica/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -31,7 +31,9 @@ A reminder app where you can log your plants and be reminded of when they need t
 - [X] User logs in to access their previously logged plant information
 - [X] User can log the plants that they have (names and number of each type of plant)
 - [ ] User gets reminder when it is time to water their logged in plants
-* ...
+- [ ] Settings/Profile Page
+
+
 
 **Optional Nice-to-have Stories**
 

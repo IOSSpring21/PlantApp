@@ -128,3 +128,7 @@ Image attribution: Darius Dan, flaticon (https://www.flaticon.com/packs/plants-2
 Gif of Profile/Settings
 
 <img src=Gif1Sprint2.gif width=250><br>
+
+Gif of Plant Gallery Draft
+
+<img src=https://media.giphy.com/media/JP5DNER5whQv7F6s4E/giphy.gif><br>

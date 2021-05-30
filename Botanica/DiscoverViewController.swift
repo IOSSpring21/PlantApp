@@ -10,18 +10,17 @@ import UIKit
 class DiscoverViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return movies.count
+        return plantpics.count
 
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DiscoverCell", for: indexPath) as! DiscoverCell
         
-        let movie = movies[indexPath.item]
+        let plantpic = plantpics[indexPath.item]
         
-//        let baseUrl = "https://image.tmdb.org/t/p/w185"
         let baseUrl = ""
-        let posterPath = movie["webformatURL"] as! String
+        let posterPath = plantpic["webformatURL"] as! String
         let posterUrl = URL(string: baseUrl + posterPath)
         
         cell.discoverView.af_setImage(withURL: posterUrl!)
@@ -34,7 +33,7 @@ class DiscoverViewController: UIViewController, UICollectionViewDataSource, UICo
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var movies = [[String:Any]]()
+    var plantpics = [[String:Any]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,24 +59,13 @@ class DiscoverViewController: UIViewController, UICollectionViewDataSource, UICo
            } else if let data = data {
               let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
 
-            self.movies = dataDictionary["hits"] as! [[String:Any]]
+            self.plantpics = dataDictionary["hits"] as! [[String:Any]]
             
             self.collectionView.reloadData()
-            print(self.movies)
+            print(self.plantpics)
            }
         }
         task.resume()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

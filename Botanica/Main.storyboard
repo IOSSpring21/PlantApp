@@ -20,7 +20,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5L-Xn-VT5">
                                 <rect key="frame" x="50" y="278" width="285" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -31,9 +31,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jH6-dW-OA6">
-                                <rect key="frame" x="50" y="383" width="74" height="21"/>
+                                <rect key="frame" x="50" y="383" width="70" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -44,16 +44,18 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEx-xq-Ysq">
-                                <rect key="frame" x="50" y="559" width="47" height="30"/>
+                                <rect key="frame" x="49" y="559" width="53" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FCu-sf-WNT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ub-2C-36N">
-                                <rect key="frame" x="309" y="559" width="54" height="30"/>
+                                <rect key="frame" x="308" y="559" width="59" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="95b-UM-B1P"/>
@@ -166,18 +168,11 @@
                                 </connections>
                             </barButtonItem>
                         </leftBarButtonItems>
-                        <rightBarButtonItems>
-                            <barButtonItem title="Item" image="square.and.pencil" catalog="system" id="te5-lB-aqY">
-                                <connections>
-                                    <segue destination="YeJ-S3-87y" kind="presentation" id="tuy-AD-PPi"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Gallery" id="BOr-le-nF5">
-                                <connections>
-                                    <segue destination="Cf9-er-CiW" kind="presentation" id="63b-RE-wqV"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="te5-lB-aqY">
+                            <connections>
+                                <segue destination="YeJ-S3-87y" kind="presentation" id="tuy-AD-PPi"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="WpI-eo-Wce" id="hIU-8x-oAb"/>
@@ -323,66 +318,6 @@
             </objects>
             <point key="canvasLocation" x="2486.9565217391305" y="402.45535714285711"/>
         </scene>
-        <!--Grid View Controller-->
-        <scene sceneID="i2N-ML-AU6">
-            <objects>
-                <viewController id="Cf9-er-CiW" customClass="GridViewController" customModule="Botanica" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ete-h7-aRm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2cz-O2-z47">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="825"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cyA-Om-4xn">
-                                    <size key="itemSize" width="186" height="203"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlantGridCell" id="6if-LD-RnG" customClass="PlantGridCell" customModule="Botanica" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="186" height="203"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Qqc-T0-2kV">
-                                            <rect key="frame" x="0.0" y="0.0" width="186" height="203"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="botanic (10)" translatesAutoresizingMaskIntoConstraints="NO" id="W0z-kk-6Jd">
-                                                    <rect key="frame" x="0.0" y="0.0" width="184" height="198"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                                    <gestureRecognizers/>
-                                                    <connections>
-                                                        <outletCollection property="gestureRecognizers" destination="j0n-Aa-YoU" appends="YES" id="vpM-Jh-nvO"/>
-                                                    </connections>
-                                                </imageView>
-                                            </subviews>
-                                        </collectionViewCellContentView>
-                                        <size key="customSize" width="186" height="203"/>
-                                        <connections>
-                                            <outlet property="plantView" destination="W0z-kk-6Jd" id="k4Z-5t-cza"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Hah-MY-Us0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <connections>
-                        <outlet property="collectionView" destination="2cz-O2-z47" id="32Q-6h-OLD"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KH0-zZ-XHZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="j0n-Aa-YoU">
-                    <connections>
-                        <action selector="onCameraButton:" destination="Cf9-er-CiW" id="SkJ-AP-Bdx"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="1585.5072463768117" y="-687.05357142857144"/>
-        </scene>
         <!--CameraViewController-->
         <scene sceneID="h3K-tG-Q2W">
             <objects>
@@ -462,7 +397,6 @@
     <resources>
         <image name="botanic" width="512" height="512"/>
         <image name="botanic (1)" width="512" height="512"/>
-        <image name="botanic (10)" width="512" height="512"/>
         <image name="botanic (11)" width="512" height="512"/>
         <image name="botanic (2)" width="512" height="512"/>
         <image name="botanic (3)" width="512" height="512"/>

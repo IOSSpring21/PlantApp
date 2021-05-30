@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03241575265B2DD2000F37A3 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03241574265B2DD2000F37A3 /* GridViewController.swift */; };
-		0324157A265B31CE000F37A3 /* PlantGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03241579265B31CE000F37A3 /* PlantGridCell.swift */; };
 		0324159B26634762000F37A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0324159A26634762000F37A3 /* Main.storyboard */; };
 		032415A026642765000F37A3 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324159F26642764000F37A3 /* DiscoverViewController.swift */; };
 		032415AA26642AE8000F37A3 /* DiscoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032415A926642AE8000F37A3 /* DiscoverCell.swift */; };
@@ -46,8 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03241574265B2DD2000F37A3 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
-		03241579265B31CE000F37A3 /* PlantGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantGridCell.swift; sourceTree = "<group>"; };
 		0324159A26634762000F37A3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0324159F26642764000F37A3 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		032415A926642AE8000F37A3 /* DiscoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCell.swift; sourceTree = "<group>"; };
@@ -165,8 +161,6 @@
 				3BC949652651E2DA000AAE6D /* CameraViewController.swift */,
 				B1B58FCD265AD7CC00BDCDAA /* FeedViewController.swift */,
 				B1B58FCF265ADB8700BDCDAA /* PostCell.swift */,
-				03241574265B2DD2000F37A3 /* GridViewController.swift */,
-				03241579265B31CE000F37A3 /* PlantGridCell.swift */,
 				0324159A26634762000F37A3 /* Main.storyboard */,
 				0324159F26642764000F37A3 /* DiscoverViewController.swift */,
 				032415A926642AE8000F37A3 /* DiscoverCell.swift */,
@@ -430,8 +424,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03241575265B2DD2000F37A3 /* GridViewController.swift in Sources */,
-				0324157A265B31CE000F37A3 /* PlantGridCell.swift in Sources */,
 				032415AA26642AE8000F37A3 /* DiscoverCell.swift in Sources */,
 				B1B58FD0265ADB8700BDCDAA /* PostCell.swift in Sources */,
 				035EC98B26519AC500E462CD /* PostViewController.swift in Sources */,

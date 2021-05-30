@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 import AlamofireImage
 
 class GridViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate
@@ -13,6 +14,9 @@ class GridViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var posts = [PFObject]()
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +35,13 @@ class GridViewController: UIViewController, UICollectionViewDataSource, UICollec
         layout.itemSize = CGSize(width: width, height: width * 3/2)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let pic = PFObject(className: "plantPics")
+        pic["text"] = "this is a random comment"
+        pic["author"] = PFUser.current()!
+
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 12
@@ -38,12 +49,29 @@ class GridViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlantGridCell", for: indexPath) as! PlantGridCell
-        
-//        let plantURL = URL(string: "https://picsum.photos/185")
-//        cell.plantView.af_setImage(withURL: plantURL!)
-        
+
+        let plantURL = URL(string: "https://source.unsplash.com/user/feeypflanzen")
+        cell.plantView.af_setImage(withURL: plantURL!)
+
         return cell
     }
+    
+//    var imagesArray: [UIImage]
+//
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return imagesArray.count
+//
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! UploadDocsImagesCollectionViewCell
+//
+//
+//            cell.plantView.image = imagesArray[indexPath.row]
+//
+//
+//        return cell
+//    }
     
     
     @IBOutlet weak var plantView: UIImageView!

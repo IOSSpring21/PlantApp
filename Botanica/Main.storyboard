@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--<<<<<<< HEAD-->
-<!--<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">-->
-<!--=======-->
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uuI-t3-Wnd">
-<!-->>>>>>> c7dc46225ae5dcf827bfd3f1f6ce853440460ae8-->
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -295,6 +291,9 @@
                                             </subviews>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="186" height="203"/>
+                                        <connections>
+                                            <outlet property="plantView" destination="W0z-kk-6Jd" id="k4Z-5t-cza"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

@@ -9,5 +9,7 @@ import UIKit
 
 class PlantGridCell: UICollectionViewCell {
     
+
     @IBOutlet weak var plantView: UIImageView!
+    
 }

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<!--<<<<<<< HEAD-->
+<!--<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">-->
+<!--=======-->
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uuI-t3-Wnd">
+<!-->>>>>>> c7dc46225ae5dcf827bfd3f1f6ce853440460ae8-->
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -158,11 +163,18 @@
                                 <segue destination="45d-AW-kcx" kind="presentation" id="Fxj-hG-Q2w"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="te5-lB-aqY">
-                            <connections>
-                                <segue destination="YeJ-S3-87y" kind="presentation" id="tuy-AD-PPi"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="square.and.pencil" catalog="system" id="te5-lB-aqY">
+                                <connections>
+                                    <segue destination="YeJ-S3-87y" kind="presentation" id="tuy-AD-PPi"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Gallery" id="BOr-le-nF5">
+                                <connections>
+                                    <segue destination="Cf9-er-CiW" kind="presentation" id="63b-RE-wqV"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="WpI-eo-Wce" id="hIU-8x-oAb"/>
@@ -246,6 +258,63 @@
             </objects>
             <point key="canvasLocation" x="2487" y="403"/>
         </scene>
+        <!--Grid View Controller-->
+        <scene sceneID="i2N-ML-AU6">
+            <objects>
+                <viewController id="Cf9-er-CiW" customClass="GridViewController" customModule="Botanica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ete-h7-aRm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2cz-O2-z47">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="825"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cyA-Om-4xn">
+                                    <size key="itemSize" width="186" height="203"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlantGridCell" id="6if-LD-RnG" customClass="PlantGridCell" customModule="Botanica" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="186" height="203"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Qqc-T0-2kV">
+                                            <rect key="frame" x="0.0" y="0.0" width="186" height="203"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="botanic (10)" translatesAutoresizingMaskIntoConstraints="NO" id="W0z-kk-6Jd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="184" height="198"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <gestureRecognizers/>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="j0n-Aa-YoU" appends="YES" id="vpM-Jh-nvO"/>
+                                                    </connections>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="186" height="203"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hah-MY-Us0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="2cz-O2-z47" id="32Q-6h-OLD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KH0-zZ-XHZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="j0n-Aa-YoU">
+                    <connections>
+                        <action selector="onCameraButton:" destination="Cf9-er-CiW" id="SkJ-AP-Bdx"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1585.5072463768117" y="-687.05357142857144"/>
+        </scene>
         <!--CameraViewController-->
         <scene sceneID="h3K-tG-Q2W">
             <objects>
@@ -324,6 +393,7 @@
     <resources>
         <image name="botanic" width="512" height="512"/>
         <image name="botanic (1)" width="512" height="512"/>
+        <image name="botanic (10)" width="512" height="512"/>
         <image name="botanic (11)" width="512" height="512"/>
         <image name="botanic (2)" width="512" height="512"/>
         <image name="botanic (3)" width="512" height="512"/>

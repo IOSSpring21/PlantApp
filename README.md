@@ -28,10 +28,12 @@ A reminder app where you can log your plants and be reminded of when they need t
 
 **Required Must-have Stories**
 
-* User logs in to access their previously logged plant information
-* User can log the plants that they have (names and number of each type of plant)
-* User gets reminder when it is time to water their logged in plants
-* ...
+- [X] User logs in to access their previously logged plant information
+- [X] User can log the plants that they have (names and number of each type of plant)
+- [ ] User gets reminder when it is time to water their logged in plants
+- [X] Settings/Profile Page
+
+
 
 **Optional Nice-to-have Stories**
 
@@ -120,3 +122,13 @@ Gif of Login/Image Post Page
 
 
 Image attribution: Darius Dan, flaticon (https://www.flaticon.com/packs/plants-28)
+
+### Sprint2
+
+Gif of Profile/Settings
+
+<img src=Gif1Sprint2.gif width=250><br>
+
+Gif of Plant Gallery Draft
+
+<img src=https://media.giphy.com/media/JP5DNER5whQv7F6s4E/giphy.gif><br>

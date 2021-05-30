@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03241575265B2DD2000F37A3 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03241574265B2DD2000F37A3 /* GridViewController.swift */; };
+		0324157A265B31CE000F37A3 /* PlantGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03241579265B31CE000F37A3 /* PlantGridCell.swift */; };
+		0324159B26634762000F37A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0324159A26634762000F37A3 /* Main.storyboard */; };
 		035EC98B26519AC500E462CD /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035EC98A26519AC500E462CD /* PostViewController.swift */; };
 		3BC949662651E2DA000AAE6D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC949652651E2DA000AAE6D /* CameraViewController.swift */; };
 		62BCF24863375A59C90223D4 /* Pods_Botanica_BotanicaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6A648AD7DFF419792EC1E0 /* Pods_Botanica_BotanicaUITests.framework */; };
 		719973E003D02C3168BAE60C /* Pods_Botanica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AED0BA28EE9A2AE0928DD82 /* Pods_Botanica.framework */; };
 		B168A7DA2650E5080042FF5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168A7D92650E5080042FF5D /* AppDelegate.swift */; };
 		B168A7DC2650E5080042FF5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168A7DB2650E5080042FF5D /* SceneDelegate.swift */; };
-		B168A7E12650E5080042FF5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B168A7DF2650E5080042FF5D /* Main.storyboard */; };
 		B168A7E32650E5090042FF5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B168A7E22650E5090042FF5D /* Assets.xcassets */; };
 		B168A7E62650E5090042FF5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B168A7E42650E5090042FF5D /* LaunchScreen.storyboard */; };
 		B168A7F12650E5090042FF5D /* BotanicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B168A7F02650E5090042FF5D /* BotanicaTests.swift */; };
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03241574265B2DD2000F37A3 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		03241579265B31CE000F37A3 /* PlantGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantGridCell.swift; sourceTree = "<group>"; };
+		0324159A26634762000F37A3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		035EC98A26519AC500E462CD /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		2AED0BA28EE9A2AE0928DD82 /* Pods_Botanica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Botanica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A667FC12384E4984497D38 /* Pods_BotanicaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BotanicaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,7 +59,6 @@
 		B168A7D62650E5080042FF5D /* Botanica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Botanica.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B168A7D92650E5080042FF5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B168A7DB2650E5080042FF5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B168A7E02650E5080042FF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B168A7E22650E5090042FF5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B168A7E52650E5090042FF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B168A7E72650E5090042FF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -149,7 +153,6 @@
 			children = (
 				B168A7D92650E5080042FF5D /* AppDelegate.swift */,
 				B168A7DB2650E5080042FF5D /* SceneDelegate.swift */,
-				B168A7DF2650E5080042FF5D /* Main.storyboard */,
 				B168A7E22650E5090042FF5D /* Assets.xcassets */,
 				B168A7E42650E5090042FF5D /* LaunchScreen.storyboard */,
 				B168A7E72650E5090042FF5D /* Info.plist */,
@@ -158,6 +161,9 @@
 				3BC949652651E2DA000AAE6D /* CameraViewController.swift */,
 				B1B58FCD265AD7CC00BDCDAA /* FeedViewController.swift */,
 				B1B58FCF265ADB8700BDCDAA /* PostCell.swift */,
+				03241574265B2DD2000F37A3 /* GridViewController.swift */,
+				03241579265B31CE000F37A3 /* PlantGridCell.swift */,
+				0324159A26634762000F37A3 /* Main.storyboard */,
 			);
 			path = Botanica;
 			sourceTree = "<group>";
@@ -288,9 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0324159B26634762000F37A3 /* Main.storyboard in Resources */,
 				B168A7E62650E5090042FF5D /* LaunchScreen.storyboard in Resources */,
 				B168A7E32650E5090042FF5D /* Assets.xcassets in Resources */,
-				B168A7E12650E5080042FF5D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +424,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03241575265B2DD2000F37A3 /* GridViewController.swift in Sources */,
+				0324157A265B31CE000F37A3 /* PlantGridCell.swift in Sources */,
 				B1B58FD0265ADB8700BDCDAA /* PostCell.swift in Sources */,
 				035EC98B26519AC500E462CD /* PostViewController.swift in Sources */,
 				3BC949662651E2DA000AAE6D /* CameraViewController.swift in Sources */,
@@ -460,14 +468,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B168A7DF2650E5080042FF5D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B168A7E02650E5080042FF5D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B168A7E42650E5090042FF5D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -17,6 +17,10 @@ class GridViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     var posts = [PFObject]()
 
+    var plants = [[String:Any]]()
+    
+    let myRefreshControl = UIRefreshControl()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +32,28 @@ class GridViewController: UIViewController, UICollectionViewDataSource, UICollec
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
         
-        layout.minimumLineSpacing = 4
-        layout.minimumInteritemSpacing = 4
+//        layout.minimumLineSpacing = 4
+//        layout.minimumInteritemSpacing = 4
         
         let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2)/3
         layout.itemSize = CGSize(width: width, height: width * 3/2)
+        
+        let url = URL(string: "https://api.themoviedb.org/3/movie/297762/similar?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+        let task = session.dataTask(with: request) { (data, response, error) in
+           // This will run when the network request returns
+           if let error = error {
+              print(error.localizedDescription)
+           } else if let data = data {
+              let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+
+            self.plants = dataDictionary["results"] as! [[String:Any]]
+            
+            self.collectionView.reloadData()
+           }
+        }
+        task.resume()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -48,11 +69,15 @@ class GridViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        collectionView.reloadItems(at: [indexPath])
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlantGridCell", for: indexPath) as! PlantGridCell
-
-        let plantURL = URL(string: "https://source.unsplash.com/user/feeypflanzen")
+        
+        
+        let path = "/"
+        let plantURL = URL(string: "https://source.unsplash.com/user/feeypflanzen"+path)
         cell.plantView.af_setImage(withURL: plantURL!)
 
+        collectionView.reloadItems(at: [indexPath])
         return cell
     }
     
@@ -100,6 +125,8 @@ class GridViewController: UIViewController, UICollectionViewDataSource, UICollec
         dismiss(animated: true, completion: nil)
     }
     
+
+
     
 
     /*

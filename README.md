@@ -31,6 +31,7 @@ A reminder app where you can log your plants and be reminded of when they need t
 - [X] User logs in to access their previously logged plant information
 - [X] User can log the plants that they have (names and number of each type of plant)
 - [ ] User gets reminder when it is time to water their logged in plants
+- [X] User can access Discover page to see inspiration for plants to get
 - [X] Settings/Profile Page
 
 
@@ -132,3 +133,13 @@ Gif of Profile/Settings
 Gif of Plant Gallery Draft
 
 <img src=https://media.giphy.com/media/JP5DNER5whQv7F6s4E/giphy.gif><br>
+
+### Sprint3
+
+Gif of Launch Page
+
+<img src=https://media.giphy.com/media/JfoDYNcmYkyXtB7pKa/giphy.gif><br>
+
+Gif of Discover Page
+
+<img src=https://media.giphy.com/media/2w3NiKaE1wwBuOt7h4/giphy.gif><br>

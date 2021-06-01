@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		0324159B26634762000F37A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0324159A26634762000F37A3 /* Main.storyboard */; };
 		032415A026642765000F37A3 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324159F26642764000F37A3 /* DiscoverViewController.swift */; };
 		032415AA26642AE8000F37A3 /* DiscoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032415A926642AE8000F37A3 /* DiscoverCell.swift */; };
-=======
 		03241575265B2DD2000F37A3 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03241574265B2DD2000F37A3 /* GridViewController.swift */; };
 		0324157A265B31CE000F37A3 /* PlantGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03241579265B31CE000F37A3 /* PlantGridCell.swift */; };
 		032415C72665F153000F37A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032415C62665F153000F37A3 /* Main.storyboard */; };
->>>>>>> main
 		035EC98B26519AC500E462CD /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035EC98A26519AC500E462CD /* PostViewController.swift */; };
 		3BC949662651E2DA000AAE6D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC949652651E2DA000AAE6D /* CameraViewController.swift */; };
 		62BCF24863375A59C90223D4 /* Pods_Botanica_BotanicaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6A648AD7DFF419792EC1E0 /* Pods_Botanica_BotanicaUITests.framework */; };
@@ -50,15 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
 		0324159A26634762000F37A3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0324159F26642764000F37A3 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		032415A926642AE8000F37A3 /* DiscoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCell.swift; sourceTree = "<group>"; };
-=======
-		03241574265B2DD2000F37A3 /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
-		03241579265B31CE000F37A3 /* PlantGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantGridCell.swift; sourceTree = "<group>"; };
-		032415C62665F153000F37A3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
->>>>>>> main
 		035EC98A26519AC500E462CD /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		2AED0BA28EE9A2AE0928DD82 /* Pods_Botanica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Botanica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A667FC12384E4984497D38 /* Pods_BotanicaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BotanicaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,15 +164,9 @@
 				3BC949652651E2DA000AAE6D /* CameraViewController.swift */,
 				B1B58FCD265AD7CC00BDCDAA /* FeedViewController.swift */,
 				B1B58FCF265ADB8700BDCDAA /* PostCell.swift */,
-<<<<<<< HEAD
 				0324159A26634762000F37A3 /* Main.storyboard */,
 				0324159F26642764000F37A3 /* DiscoverViewController.swift */,
 				032415A926642AE8000F37A3 /* DiscoverCell.swift */,
-=======
-				03241574265B2DD2000F37A3 /* GridViewController.swift */,
-				03241579265B31CE000F37A3 /* PlantGridCell.swift */,
-				032415C62665F153000F37A3 /* Main.storyboard */,
->>>>>>> main
 			);
 			path = Botanica;
 			sourceTree = "<group>";
@@ -312,11 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				0324159B26634762000F37A3 /* Main.storyboard in Resources */,
-=======
-				032415C72665F153000F37A3 /* Main.storyboard in Resources */,
->>>>>>> main
 				B168A7E62650E5090042FF5D /* LaunchScreen.storyboard in Resources */,
 				B168A7E32650E5090042FF5D /* Assets.xcassets in Resources */,
 			);
@@ -446,12 +427,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
+
 				032415AA26642AE8000F37A3 /* DiscoverCell.swift in Sources */,
-=======
-				03241575265B2DD2000F37A3 /* GridViewController.swift in Sources */,
-				0324157A265B31CE000F37A3 /* PlantGridCell.swift in Sources */,
->>>>>>> main
 				B1B58FD0265ADB8700BDCDAA /* PostCell.swift in Sources */,
 				035EC98B26519AC500E462CD /* PostViewController.swift in Sources */,
 				3BC949662651E2DA000AAE6D /* CameraViewController.swift in Sources */,

@@ -28,8 +28,6 @@ class PostViewController: UIViewController {
             
         }
         
-        
-        
     }
     
     

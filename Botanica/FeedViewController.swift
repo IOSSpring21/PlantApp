@@ -49,6 +49,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let post = posts[indexPath.row]
         
         let user = post["author"] as! PFUser
+<<<<<<< HEAD
 //        cell.usernameLabel.text = user.username
 //        cell.captionLabel.text = post["textPost"] as! String
 //
@@ -59,6 +60,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 //        cell.photoView.af_setImage(withURL: url)
 //
 //
+=======
+        cell.usernameLabel.text = user.username
+        cell.captionLabel.text = post["textPost"] as! String
+        
+        let imageFile = post["image"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+
+        cell.photoView.af_setImage(withURL: url)
+        
+        
+>>>>>>> main
         return cell
     }
 

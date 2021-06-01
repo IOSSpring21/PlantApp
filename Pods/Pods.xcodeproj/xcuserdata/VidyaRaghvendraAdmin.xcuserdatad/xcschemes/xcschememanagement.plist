@@ -10,7 +10,11 @@
 =======
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
+>>>>>>> c7dc46225ae5dcf827bfd3f1f6ce853440460ae8
+=======
 >>>>>>> 55733cc27a2876ccfae701e6af8c2d9069088e0d
+>>>>>>> main
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -20,7 +24,11 @@
 =======
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
+>>>>>>> c7dc46225ae5dcf827bfd3f1f6ce853440460ae8
+=======
 >>>>>>> 55733cc27a2876ccfae701e6af8c2d9069088e0d
+>>>>>>> main
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
@@ -30,7 +38,11 @@
 =======
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
+>>>>>>> c7dc46225ae5dcf827bfd3f1f6ce853440460ae8
+=======
 >>>>>>> 55733cc27a2876ccfae701e6af8c2d9069088e0d
+>>>>>>> main
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
@@ -40,7 +52,11 @@
 =======
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
+>>>>>>> c7dc46225ae5dcf827bfd3f1f6ce853440460ae8
+=======
 >>>>>>> 55733cc27a2876ccfae701e6af8c2d9069088e0d
+>>>>>>> main
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
@@ -50,7 +66,11 @@
 =======
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
+>>>>>>> c7dc46225ae5dcf827bfd3f1f6ce853440460ae8
+=======
 >>>>>>> 55733cc27a2876ccfae701e6af8c2d9069088e0d
+>>>>>>> main
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
@@ -60,7 +80,11 @@
 =======
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
+>>>>>>> c7dc46225ae5dcf827bfd3f1f6ce853440460ae8
+=======
 >>>>>>> 55733cc27a2876ccfae701e6af8c2d9069088e0d
+>>>>>>> main
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
@@ -70,7 +94,11 @@
 =======
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
+>>>>>>> c7dc46225ae5dcf827bfd3f1f6ce853440460ae8
+=======
 >>>>>>> 55733cc27a2876ccfae701e6af8c2d9069088e0d
+>>>>>>> main
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
@@ -80,7 +108,11 @@
 =======
 			<key>isShown</key>
 			<false/>
+<<<<<<< HEAD
+>>>>>>> c7dc46225ae5dcf827bfd3f1f6ce853440460ae8
+=======
 >>>>>>> 55733cc27a2876ccfae701e6af8c2d9069088e0d
+>>>>>>> main
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
@@ -89,6 +121,10 @@
 =======
 	<key>SuppressBuildableAutocreation</key>
 	<dict/>
+<<<<<<< HEAD
+>>>>>>> c7dc46225ae5dcf827bfd3f1f6ce853440460ae8
+=======
 >>>>>>> 55733cc27a2876ccfae701e6af8c2d9069088e0d
+>>>>>>> main
 </dict>
 </plist>

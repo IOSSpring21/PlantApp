@@ -156,7 +156,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="V6n-si-tQZ">
-<<<<<<< HEAD:Botanica/Main.storyboard
                         <leftBarButtonItems>
                             <barButtonItem title="Photo" image="camera.fill" catalog="system" id="uPa-kN-FWE">
                                 <connections>
@@ -174,25 +173,6 @@
                                 <segue destination="YeJ-S3-87y" kind="presentation" id="tuy-AD-PPi"/>
                             </connections>
                         </barButtonItem>
-=======
-                        <barButtonItem key="leftBarButtonItem" title="Photo" image="camera.fill" catalog="system" id="uPa-kN-FWE">
-                            <connections>
-                                <segue destination="45d-AW-kcx" kind="presentation" id="Fxj-hG-Q2w"/>
-                            </connections>
-                        </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem title="Item" image="square.and.pencil" catalog="system" id="te5-lB-aqY">
-                                <connections>
-                                    <segue destination="YeJ-S3-87y" kind="presentation" id="tuy-AD-PPi"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Gallery" id="BOr-le-nF5">
-                                <connections>
-                                    <segue destination="Cf9-er-CiW" kind="presentation" id="63b-RE-wqV"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
->>>>>>> main:Botanica/Base.lproj/Main.storyboard
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="WpI-eo-Wce" id="hIU-8x-oAb"/>

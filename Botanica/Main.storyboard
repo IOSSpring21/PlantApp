@@ -86,7 +86,7 @@
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="59.598214285714285"/>
         </scene>
-        <!--Feed View Controller-->
+        <!--Feed-->
         <scene sceneID="tqf-lW-ADa">
             <objects>
                 <viewController id="oF6-7v-lB9" customClass="FeedViewController" customModule="Botanica" customModuleProvider="target" sceneMemberID="viewController">
@@ -155,11 +155,12 @@
                         <viewLayoutGuide key="safeArea" id="hGZ-v7-0f1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Feed" image="note.text" catalog="system" id="Z9b-ZK-vp5"/>
                     <navigationItem key="navigationItem" id="V6n-si-tQZ">
                         <leftBarButtonItems>
                             <barButtonItem title="Photo" image="camera.fill" catalog="system" id="uPa-kN-FWE">
                                 <connections>
-                                    <segue destination="45d-AW-kcx" kind="presentation" id="Fxj-hG-Q2w"/>
+                                    <segue destination="45d-AW-kcx" kind="show" id="eG0-fQ-3Zp"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Discover" id="097-3i-fyU">
@@ -170,7 +171,7 @@
                         </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="te5-lB-aqY">
                             <connections>
-                                <segue destination="YeJ-S3-87y" kind="presentation" id="tuy-AD-PPi"/>
+                                <segue destination="YeJ-S3-87y" kind="show" id="bgu-hW-CA7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -180,7 +181,97 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zS-oU-ZyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1585.5072463768117" y="59.598214285714285"/>
+            <point key="canvasLocation" x="1491" y="1573"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="2Oo-Mw-jiC">
+            <objects>
+                <viewController id="QiN-CX-vB5" customClass="ProfileViewController" customModule="Botanica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kjc-yW-gDH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wt1-m0-RQc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="UJS-N5-tha"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Wj-Wf-9fb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45" y="1573"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="m1X-Fy-kun">
+            <objects>
+                <viewController title="Settings" id="cBU-F1-bGZ" customClass="SettingsViewController" customModule="Botanica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JlT-Gx-C96">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLZ-Pr-soE">
+                                <rect key="frame" x="140" y="95" width="134" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="36"/>
+                                <color key="textColor" red="0.15125883900000001" green="0.52598769430000003" blue="0.170850953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set Watering Notification:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY5-9b-QNA">
+                                <rect key="frame" x="34" y="177" width="193" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                <color key="textColor" red="0.15125883900000001" green="0.52598769430000003" blue="0.170850953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="botanic (4)" translatesAutoresizingMaskIntoConstraints="NO" id="Orv-iZ-rLX">
+                                <rect key="frame" x="311" y="98" width="61" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="botanic (8)" translatesAutoresizingMaskIntoConstraints="NO" id="G77-7o-3li">
+                                <rect key="frame" x="50" y="98" width="61" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7Z-Lh-wHt">
+                                <rect key="frame" x="249" y="185" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.67453455025181008" green="1" blue="0.71322639176557479" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Add Timer">
+                                    <color key="titleColor" red="0.15125883900000001" green="0.52598769430000003" blue="0.170850953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapButton" destination="cBU-F1-bGZ" eventType="touchUpInside" id="VGW-lD-Fsg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M5q-AG-JgP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="Fwz-Vk-w8X"/>
+                    <connections>
+                        <outlet property="Notification" destination="B7Z-Lh-wHt" id="xAE-9I-Ss6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vi4-5P-nFo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="763.768115942029" y="1572.9910714285713"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vfi-NH-i4w">
+            <objects>
+                <tabBarController id="s8K-xd-AqF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LkI-yN-iyR"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iux-AI-ixg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QiN-CX-vB5" kind="relationship" relationship="viewControllers" id="hvt-eA-Yjc"/>
+                        <segue destination="oF6-7v-lB9" kind="relationship" relationship="viewControllers" id="Mwi-N7-yJz"/>
+                        <segue destination="cBU-F1-bGZ" kind="relationship" relationship="viewControllers" id="EnW-q8-wba"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4mi-q1-7Rc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="810"/>
         </scene>
         <!--Discover View Controller-->
         <scene sceneID="QYQ-wQ-gQX">
@@ -221,17 +312,17 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discover inspiration for new plants to get!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lga-de-oxc">
-                                <rect key="frame" x="8" y="20" width="354" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="18"/>
-                                <color key="textColor" red="0.14934993320000001" green="0.52598769430000003" blue="0.17028177550000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="botanic (7)" translatesAutoresizingMaskIntoConstraints="NO" id="vWI-69-sTG">
                                 <rect key="frame" x="333" y="12" width="61" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discover inspiration for new plants to get!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lga-de-oxc">
+                                <rect key="frame" x="62" y="20" width="352" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="15"/>
+                                <color key="textColor" red="0.14934993320000001" green="0.52598769430000003" blue="0.17028177550000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7gW-od-fH9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -242,7 +333,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BbV-gK-WTv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1585.5072463768117" y="799.55357142857144"/>
+            <point key="canvasLocation" x="1490" y="2296"/>
         </scene>
         <!--Post View Controller-->
         <scene sceneID="Pyi-sy-xAn">
@@ -253,7 +344,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write your post here!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O1S-0o-Bes">
-                                <rect key="frame" x="20" y="141.5" width="377" height="128"/>
+                                <rect key="frame" x="20" y="197.5" width="377" height="128"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="sxF-CH-Fov"/>
@@ -263,19 +354,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post your questions and comments for the Botanica community here!" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APs-nR-FXH">
-                                <rect key="frame" x="20" y="20" width="374" height="41.5"/>
+                                <rect key="frame" x="20" y="76" width="374" height="41.5"/>
                                 <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="17"/>
                                 <color key="textColor" red="0.14934993316249481" green="0.52598769430051817" blue="0.17028177546226592" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQH-ga-bhu">
-                                <rect key="frame" x="20" y="300" width="374" height="33"/>
-                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="onSubmit:" destination="YeJ-S3-87y" eventType="touchUpInside" id="BvD-G9-aZT"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="botanic (1)" translatesAutoresizingMaskIntoConstraints="NO" id="bZC-ce-CXq">
                                 <rect key="frame" x="22" y="383" width="83" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -296,6 +379,14 @@
                                 <rect key="frame" x="294" y="379" width="122" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQH-ga-bhu">
+                                <rect key="frame" x="15" y="331" width="374" height="33"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="onSubmit:" destination="YeJ-S3-87y" eventType="touchUpInside" id="BvD-G9-aZT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mka-ZH-6WZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -310,20 +401,21 @@
                             <constraint firstItem="VQH-ga-bhu" firstAttribute="top" secondItem="O1S-0o-Bes" secondAttribute="bottom" constant="42" id="xCd-NL-eRq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="oJI-n7-xGT"/>
                     <connections>
                         <outlet property="postField" destination="O1S-0o-Bes" id="l4Q-zQ-QI7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z5R-Lb-ghS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2486.9565217391305" y="402.45535714285711"/>
+            <point key="canvasLocation" x="2667" y="1076"/>
         </scene>
         <!--Grid View Controller-->
         <scene sceneID="i2N-ML-AU6">
             <objects>
                 <viewController id="Cf9-er-CiW" customClass="GridViewController" customModule="Botanica" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ete-h7-aRm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2cz-O2-z47">
@@ -418,6 +510,9 @@
                         <viewLayoutGuide key="safeArea" id="DuR-GM-Pqs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="3i3-w0-ai4">
+                        <barButtonItem key="backBarButtonItem" title="Feed" id="04A-VU-4aL"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="ImageView" destination="Civ-mN-KG0" id="u1O-PG-rbz"/>
                         <outlet property="commentField" destination="jJn-a0-tmk" id="zfJ-Cl-982"/>
@@ -430,7 +525,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2486.9565217391305" y="-259.15178571428572"/>
+            <point key="canvasLocation" x="2667" y="1785"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UXi-rA-OSo">
@@ -443,7 +538,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="oF6-7v-lB9" kind="relationship" relationship="rootViewController" id="zeV-Lw-re4"/>
+                        <segue destination="s8K-xd-AqF" kind="relationship" relationship="rootViewController" id="SIg-WX-97f"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cmn-Wb-Vv2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -461,7 +556,11 @@
         <image name="botanic (4)" width="512" height="512"/>
         <image name="botanic (6)" width="512" height="512"/>
         <image name="botanic (7)" width="512" height="512"/>
+        <image name="botanic (8)" width="512" height="512"/>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <image name="note.text" catalog="system" width="128" height="106"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

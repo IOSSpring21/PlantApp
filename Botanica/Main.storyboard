@@ -206,14 +206,52 @@
                     <view key="view" contentMode="scaleToFill" id="JlT-Gx-C96">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLZ-Pr-soE">
+                                <rect key="frame" x="140" y="95" width="134" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="36"/>
+                                <color key="textColor" red="0.15125883900000001" green="0.52598769430000003" blue="0.170850953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set Watering Notification:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LY5-9b-QNA">
+                                <rect key="frame" x="34" y="177" width="193" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
+                                <color key="textColor" red="0.15125883900000001" green="0.52598769430000003" blue="0.170850953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="botanic (4)" translatesAutoresizingMaskIntoConstraints="NO" id="Orv-iZ-rLX">
+                                <rect key="frame" x="311" y="98" width="61" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="botanic (8)" translatesAutoresizingMaskIntoConstraints="NO" id="G77-7o-3li">
+                                <rect key="frame" x="50" y="98" width="61" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7Z-Lh-wHt">
+                                <rect key="frame" x="249" y="185" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.67453455025181008" green="1" blue="0.71322639176557479" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Add Timer">
+                                    <color key="titleColor" red="0.15125883900000001" green="0.52598769430000003" blue="0.170850953" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapButton" destination="cBU-F1-bGZ" eventType="touchUpInside" id="VGW-lD-Fsg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="M5q-AG-JgP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="Fwz-Vk-w8X"/>
+                    <connections>
+                        <outlet property="Notification" destination="B7Z-Lh-wHt" id="xAE-9I-Ss6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vi4-5P-nFo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="1573"/>
+            <point key="canvasLocation" x="763.768115942029" y="1572.9910714285713"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vfi-NH-i4w">
@@ -518,6 +556,7 @@
         <image name="botanic (4)" width="512" height="512"/>
         <image name="botanic (6)" width="512" height="512"/>
         <image name="botanic (7)" width="512" height="512"/>
+        <image name="botanic (8)" width="512" height="512"/>
         <image name="camera.fill" catalog="system" width="128" height="94"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="note.text" catalog="system" width="128" height="106"/>

@@ -20,6 +20,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         tableView.delegate = self
         tableView.dataSource = self
+        
         // Do any additional setup after loading the view.
     }
     
@@ -50,7 +51,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let user = post["author"] as! PFUser
         cell.usernameLabel.text = user.username
-        cell.captionLabel.text = post["textPost"] as! String
+        cell.captionLabel.text = post["caption"] as! String
 
         let imageFile = post["image"] as! PFFileObject
         let urlString = imageFile.url!

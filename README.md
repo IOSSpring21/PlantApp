@@ -12,6 +12,7 @@ Original App Design Project - README Template
 ## Overview
 ### Description
 A reminder app where you can log your plants and be reminded of when they need to be watered. You can also puruse plant facts and find places that these plants are sold.
+Final Video Demo: https://youtu.be/4aQuWW_iMcI
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
